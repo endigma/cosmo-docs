@@ -1,38 +1,54 @@
----
-icon: note
-description: >-
-  WunderGraph Cosmo is the Full Lifecycle GraphQL API Management Solution to
-  manage Federated Graphs at scale. Composition checks, routing, analytics, and
-  distributed tracing all in one platform.
----
+# Starlight Starter Kit: Basics
 
-# Overview
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-{% hint style="warning" %}
-NOTE FOR SDK DOCUMENTATION\
+```
+npm create astro@latest -- --template starlight
+```
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
 
-The documentation for the TypeScript SDK has been relocated to [https://bff-docs.wundergraph.com](https://bff-docs.wundergraph.com). The domain [docs.wundergraph.com](https://docs.wundergraph.com) is now designated for Cosmo-related documentation.
-{% endhint %}
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-<figure><img src=".gitbook/assets/logo.png" alt=""><figcaption></figcaption></figure>
+## 🚀 Project Structure
 
-### Built for Scalers
+Inside of your Astro + Starlight project, you'll see the following folders and files:
 
-Cosmo enables teams and organizations to manage and scale (federated) GraphQL architectures with ease. Quickly iterate without breaking anything through composition checks.
+```
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   ├── docs/
+│   └── content.config.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
 
-WunderGraph Cosmo can easily run locally, on-premises, or in the cloud as a managed service. Cosmo is a batteries-included solution, covering everything from routing to analytics.
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
 
-Cosmo supports monolithic GraphQL APIs as well as Federation v1 and v2, including Subscriptions.
+Images can be added to `src/assets/` and embedded in Markdown with a relative link.
 
+Static assets, like favicons, can be placed in the `public/` directory.
 
+## 🧞 Commands
 
-<figure><img src=".gitbook/assets/simple-architecture.png" alt=""><figcaption><p>The Core Components</p></figcaption></figure>
+All commands are run from the root of the project, from a terminal:
 
-### **The Cosmo stack**
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-* [CLI](broken-reference): The Cosmo command line interface, referred to as `wgc`, plays a crucial role in managing the Cosmo platform. Its functions include pushing schemas, validating schemas, initiating new projects, and managing users, among others. It communicates directly with the Control Plane to perform these operations.
-* [Control Plane](broken-reference): The Control Plane forms the heart of the Cosmo platform and comprises two core elements: The Platform API and the Node API. The Platform API is utilized by the Cosmo CLI tool and Studio for platform management. On the other hand, the Node API facilitates fleet-specific operations, carried out by the Router nodes.
-* [Router](broken-reference): The Router is the component that understands the GraphQL Federation protocol. It is responsible for routing requests to the correct subgraphs and for aggregating the responses. While it maintains a connection with the Control Plane, its operation is independent and does not depend on the Control Plane's functionality for maximum availability.
-* [Studio](broken-reference): The Studio serves as the web interface for the Cosmo platform, providing a user-friendly medium for platform management and collaboration on GraphQL Federation. It maintains a connection with the Control Plane through the admin API, enabling efficient platform management.
+## 👀 Want to learn more?
 
+Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).

@@ -1,0 +1,52 @@
+---
+description: >-
+  The following list gives you an Overview of the compatibility between Cosmo
+  and other Federation Implementations.
+icon: child-combatant
+title: Federation Compatibility Matrix
+---
+
+## Apollo Federation Version 1 Compatibility
+
+| Directive             | State                                       |
+| --------------------- | ------------------------------------------- |
+| @extends              | <span style="color:green;">Supported</span> |
+| @external             | <span style="color:green;">Supported</span> |
+| @key                  | <span style="color:green;">Supported</span> |
+| @key (composite keys) | <span style="color:green;">Supported</span> |
+| @provides             | <span style="color:green;">Supported</span> |
+| @requires             | <span style="color:green;">Supported</span> |
+| @tag                  | <span style="color:green;">Supported</span> |
+
+## Apollo Federation Version 2 Compatibility
+
+### 2.0
+
+| Directive                  | State                                                         |
+| -------------------------- | ------------------------------------------------------------- |
+| @inaccessible              | <span style="color:green;">Supported</span>                   |
+| @override                  | <span style="color:green;">Supported</span>                   |
+| @shareable                 | <span style="color:green;">Supported</span>                   |
+| @key "resolvable" argument | <span style="color:green;">Supported</span>                   |
+| @link                      | <span style="color:green;">Supported (but unnecessary)</span> |
+
+### 2.1
+
+| Directive                                      | State                                       |
+| ---------------------------------------------- | ------------------------------------------- |
+| @composeDirective                              | <span style="color:orange;">Planned</span>  |
+| @requires "fields" argument supports arguments | <span style="color:green;">Supported</span> |
+
+### 2.3
+
+| Directive         | State                                       |
+| ----------------- | ------------------------------------------- |
+| @key on INTERFACE | <span style="color:green;">Supported</span> |
+| @interfaceObject  | <span style="color:green;">Supported</span> |
+
+### 2.5
+
+| Directive                                       | State                                       |
+| ----------------------------------------------- | ------------------------------------------- |
+| [@authenticated](directives/authenticated.md)   | <span style="color:green;">Supported</span> |
+| [@requiresScopes](directives/requiresscopes.md) | <span style="color:green;">Supported</span> |
