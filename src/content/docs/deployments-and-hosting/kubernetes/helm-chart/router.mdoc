@@ -19,8 +19,8 @@ Install the router through our official [`OCI`](https://helm.sh/docs/topics/regi
 
 Create the following file to not bother with cli flags.
 
-{% code title="values.yaml" %}
 ```yaml
+# values.yaml
 configuration:
   # -- The router token is used to authenticate against the Cosmo platform (required)
   graphApiToken: "replace-me"
@@ -38,8 +38,8 @@ After that you can install the chart with the release name `router`. You can use
 
 Managing environment variables can be tedious. We also support providing a custom [router configuration](../../../router/configuration/#config-file). To do so, you only need to create one and specify its name in the chart values. The config must exist in the same namespace as the router.
 
-{% code title="router-config.yaml" %}
 ```yaml
+# router-config.yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -55,8 +55,8 @@ data:
 
 Now, specify the configuration name in the `existingConfigmap` of the chart values. Keep in mind that secrets should be passed as Kubernetes Secrets. Use `extraEnvVars` or  `extraEnvVarsSecret` to pass additional ones.
 
-{% code title="values.yaml" %}
 ```yaml
+# values.yaml
 existingConfigmap: "router-config"
 ```
 

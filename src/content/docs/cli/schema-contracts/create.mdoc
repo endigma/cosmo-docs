@@ -7,7 +7,6 @@ title: Create
 
 #### Exclude (the items that have the tag(s) specified will be removed from the federated graph)
 
-{% code fullWidth="false" %}
 ```bash
 npx wgc contract create <name> --source <federated-graph-name> --exclude internal -r <routing-url> 
 ```
@@ -15,7 +14,6 @@ npx wgc contract create <name> --source <federated-graph-name> --exclude interna
 
 #### Include (the items that do _not_ have the tag(s) specified will be removed from the federated graph)
 
-{% code fullWidth="false" %}
 ```bash
 npx wgc contract create <name> --source <federated-graph-name> --include public -r <routing-url> 
 ```
@@ -51,7 +49,6 @@ The --exclude and --include options are currently _mutually exclusive_. An error
 
 ## Examples
 
-{% code fullWidth="false" %}
 ```bash
 npx wgc contract create production-external --source production --exlude internal,experimental -r http://router.example.com/graphql
 ```
@@ -59,7 +56,6 @@ npx wgc contract create production-external --source production --exlude interna
 
 Create a contract graph named `production-external` from the source graph schema of `production` that excludes all schema elements tagged with `internal` or `experimental`.
 
-{% code fullWidth="false" %}
 ```bash
 npx wgc contract create production-external --source production --include public,api -r http://router.example.com/graphql
 ```

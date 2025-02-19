@@ -12,7 +12,7 @@ These rules enforce naming conventions.
 
 Field names should always use camelCase.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 type User {
   First_Name: String
@@ -22,7 +22,7 @@ type User {
 
 Correct:
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 type User {
   firstName: String
@@ -38,7 +38,7 @@ type User {
 
 Type names should always use PascalCase.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 type userProject {
   id: ID!
@@ -46,7 +46,7 @@ type userProject {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 type UserProject {
   id: ID!
@@ -62,7 +62,7 @@ type UserProject {
 
 A type's name should never be prefixed with 'Type'.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 type TypeUser {
   id: ID!
@@ -70,7 +70,7 @@ type TypeUser {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 type User {
   id: ID!
@@ -86,7 +86,7 @@ type User {
 
 A type's name should never be suffixed with 'Type'.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 type UserType {
   id: ID!
@@ -94,7 +94,7 @@ type UserType {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 type User {
   id: ID!
@@ -110,7 +110,7 @@ type User {
 
 An input's name should never be prefixed with 'Input'.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 input InputUser {
   id: ID!
@@ -118,7 +118,7 @@ input InputUser {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 input UserInput {
   id: ID!
@@ -134,7 +134,7 @@ input UserInput {
 
 An input's name should always be suffixed with 'Input'.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 input User {
   id: ID!
@@ -142,7 +142,7 @@ input User {
 ```
 
 
-{% code title="" %}
+#### "
 ```graphql
 input UserInput {
   id: ID!
@@ -158,7 +158,7 @@ input UserInput {
 
 An enum's name should never be prefixed with 'Enum'.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 enum EnumUserStatus {
   ADMIN
@@ -167,7 +167,7 @@ enum EnumUserStatus {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 enum UserStatus {
   ADMIN
@@ -184,7 +184,7 @@ enum UserStatus {
 
 An enum's name should never be suffixed with 'Enum'.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 enum UserStatusEnum {
   ADMIN
@@ -193,7 +193,7 @@ enum UserStatusEnum {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 enum UserStatus {
   ADMIN
@@ -210,7 +210,7 @@ enum UserStatus {
 
 An interface type's name should never be prefixed with 'Interface'.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 interface InterfaceUser {
   id: ID!
@@ -218,7 +218,7 @@ interface InterfaceUser {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 interface User {
   id: ID!
@@ -234,7 +234,7 @@ interface User {
 
 An interface type's name should never be suffixed with 'Interface'.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 interface UserInterface {
   id: ID!
@@ -242,7 +242,7 @@ interface UserInterface {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 interface User {
   id: ID!
@@ -258,7 +258,7 @@ interface User {
 
 Enum values should always use UPPER\_CASE.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 enum UserRole {
   admin
@@ -267,7 +267,7 @@ enum UserRole {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 enum UserRole {
   ADMIN
@@ -288,7 +288,7 @@ These rules enforce the arrangement of types,  fields and so on in the schema.
 
 Ensures all fields are sorted in alphabetical order.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 type User {
   lastName: String
@@ -297,7 +297,7 @@ type User {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 type User {
   firstName: String
@@ -314,7 +314,7 @@ type User {
 
 Ensures all enum values are sorted in alphabetical order.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 enum UserRole {
   USER
@@ -323,7 +323,7 @@ enum UserRole {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 enum UserRole {
   ADMIN
@@ -342,7 +342,7 @@ Ensures all definitions are sorted in alphabetical order.
 
 Violation:
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 type User{
   id: ID;
@@ -358,7 +358,7 @@ type Member {
 
 Correct:
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 type Member {
   id: ID;
@@ -391,7 +391,7 @@ The types include:-
 * InputObjectTypeDefinition
 * UnionTypeDefinition
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 type User {
   id: ID!
@@ -403,7 +403,7 @@ interface Member {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 # Represents a user in the system
 type User {
@@ -425,7 +425,7 @@ interface Member {
 
 Ensures enum values eliminate duplicates by disallowing case insensitivity.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 enum UserRole {
   ADMIN
@@ -434,7 +434,7 @@ enum UserRole {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 enum UserRole {
   ADMIN
@@ -450,7 +450,7 @@ enum UserRole {
 
 Ensures field names do not include their type's name as a prefix.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 type User {
   userId: ID!
@@ -458,7 +458,7 @@ type User {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 type User {
   id: ID!
@@ -474,7 +474,7 @@ type User {
 
 Requires providing a reason for the @deprecated directive.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 type User {
   id: ID! @deprecated
@@ -482,7 +482,7 @@ type User {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 type User {
   id: ID! @deprecated(reason: "No longer in use")
@@ -498,7 +498,7 @@ type User {
 
 Requires providing a deletion date for the @deprecated directive.
 
-{% code title="❌  Violation" %}
+#### ❌  Violation"
 ```graphql
 type User {
   id: ID! @deprecated(reason: "No longer in use")
@@ -506,7 +506,7 @@ type User {
 ```
 
 
-{% code title="✅  Correct" %}
+#### ✅  Correct"
 ```graphql
 type User {
   id: ID! @deprecated(reason: "No longer in use", date: "2023-01-01")
